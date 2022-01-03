@@ -11,7 +11,7 @@ probs = np.linspace(0.01, 1, m, endpoint=False) ## equally spaced in (0,1)
 
 bst_arm = np.argmax(probs)
 
-## Explore-Then-Commit (ETC)
+## Upper Confidence Bound (UCB)
 
 cum_reg = np.zeros((num_runs, T)) ## cumulative regret v/s time
 
